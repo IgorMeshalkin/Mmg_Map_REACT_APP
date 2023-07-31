@@ -1,0 +1,32 @@
+.vdbMain {
+    width: 100%;
+    padding: 10px;
+    transition: .3s;
+    display: flex;
+}
+
+.vdbMain:hover {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.vdbText {
+    width: 80%;
+}
+
+.vdbButtonContainer {
+    width: 20%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vdbButtonText {
+    opacity: 0;
+    transition: .3s;
+}
+
+.vdbMain:hover .vdbButtonText {
+    opacity: 1;
+    color: #e04a4b;
+}

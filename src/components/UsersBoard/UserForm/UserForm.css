@@ -1,0 +1,98 @@
+.usfMain {
+    height: auto;
+    max-height: 80vh;
+    width: 50vw;
+}
+
+.usfTitle {
+    width: 100%;
+    height: 10%;
+    color: #e04a4b;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usfFormContainer {
+    width: 100%;
+    height: 90%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.usfFormContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.usfFormContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #dfdfdf;
+}
+
+.usfLineContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usfNameInputContainer {
+    width: 70%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usfTextContainer {
+    width: 100%;
+    color: #6dbc74;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.usfDropDownContainer {
+    width: 70%;
+}
+
+.usfSubmitButton {
+    background-color: #6dbc74;
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.usfSubmitButton:hover{
+    background-color: #4ba453;
+}
+
+.usfFooterContainer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.usfSubmitMessage.green {
+    font-weight: bold;
+    color: #6dbc74;
+}
+
+.usfSubmitMessage.grey {
+    font-weight: bold;
+    color: #e04a4b;
+}

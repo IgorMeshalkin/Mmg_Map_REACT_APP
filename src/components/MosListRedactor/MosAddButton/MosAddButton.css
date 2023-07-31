@@ -1,0 +1,21 @@
+.mabMain {
+    width: 100%;
+    padding: 10px;
+    transition: .3s;
+    display: flex;
+}
+
+.mabMain:hover {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.mabTextSide {
+    width: 80%;
+}
+
+.mapRadioButtonSide {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

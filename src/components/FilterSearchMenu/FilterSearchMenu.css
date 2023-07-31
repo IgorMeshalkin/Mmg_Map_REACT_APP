@@ -1,0 +1,132 @@
+.fsmContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.fsmBlock {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 450px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: auto;
+    padding-bottom: 10px;
+    transform: translateX(-450px);
+    transition: .5s;
+}
+
+.fsmBlock.open {
+    transform: translateX(0);
+}
+
+.fsmTypeLinesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.fsmTypeLinesContainer.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fsmButtonsContainer {
+    width: 90%;
+    display: flex;
+    margin-top: 10px;
+    opacity: 0;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.fsmButtonsContainer.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fsmButton {
+    height: 30px;
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border: 1px #bbbbbb solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fsmButton:hover {
+    background-color: #ededed;
+}
+
+.fsmSearchMenuContainer {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    pointer-events: none;
+}
+
+@media (max-height: 850px) {
+    .fsmBlock {
+        width: 400px;
+        transform: translateX(-400px);
+    }
+
+    .fsmButton {
+        height: 25px;
+    }
+
+    .fsmSearchMenuContainer {
+        top: 65px;
+    }
+}
+
+@media (max-height: 700px) {
+    .fsmTypeLinesContainer {
+        max-height: 315px;
+        overflow-y: scroll;
+        width: 95%;
+    }
+
+    .fsmTypeLinesContainer::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .fsmTypeLinesContainer::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: #bbbbbb;
+    }
+}
+
+@media (max-height: 600px) {
+    .fsmTypeLinesContainer {
+        max-height: 205px;
+        overflow-y: scroll;
+        width: 95%;
+    }
+}
+
+@media (max-height: 500px) {
+    .fsmTypeLinesContainer {
+        max-height: 155px;
+        overflow-y: scroll;
+        width: 95%;
+    }
+}

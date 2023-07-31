@@ -1,0 +1,35 @@
+.radButLine {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.radButCheckBox {
+    height: 15px;
+    width: 15px;
+    border: 1px #9a9a9a solid;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.radButCheckBox.shadow {
+    box-shadow: 0px 0px 3px #9a9a9a;
+}
+
+.radButMarker {
+    color: #6dbc74;
+    font-weight: bold;
+    font-size: 21px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+.radButValue {
+    margin-left: 10px;
+}

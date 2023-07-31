@@ -1,0 +1,89 @@
+.mofMain {
+    width: 50vw;
+    height: 66vh;
+}
+
+.mofFormContainer {
+    overflow-y: scroll;
+    padding-right: 10px;
+    height: 90%;
+}
+
+.mofFormContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mofFormContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #dfdfdf;
+}
+
+.mofTitle {
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #e04a4b;
+    text-align: center;
+}
+
+.mofFullLine {
+    width: 100%;
+    height: 35px;
+    color: #6dbc74;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mofFullLine.grey {
+    color: #9a9a9a;
+}
+
+.horizontalSeparator {
+    width: 30px;
+}
+
+.mofShortLine {
+    width: 20%;
+    color: #9a9a9a;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.mofFooterContainer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mofSubmitButton {
+    background-color: #6dbc74;
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.mofSubmitButton:hover{
+    background-color: #4ba453;
+}
+
+.mofSubmitMessage.green {
+    font-weight: bold;
+    color: #6dbc74;
+}
+
+.mofSubmitMessage.red {
+    font-weight: bold;
+    color: #e04a4b;
+}

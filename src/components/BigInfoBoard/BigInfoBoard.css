@@ -1,0 +1,118 @@
+.bibMain {
+    width: 80vw;
+    height: 70vh;
+    min-height: 280px;
+    display: flex;
+    margin: 5px;
+}
+
+.bibTextSide {
+    height: 100%;
+    width: 60%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bibName {
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.bibAddress {
+    margin-top: 10px;
+    color: #9a9a9a;
+    font-size: 18px;
+}
+
+.bibInfoBlocksContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    padding-right: 6px;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bibInfoBlocksContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.bibInfoBlocksContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #dfdfdf;
+}
+
+.bibMapSide {
+    height: 100%;
+    width: 40%;
+    background-color: #9a9a9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px #9a9a9a solid;
+    border-radius: 10px;
+}
+
+.bibEmployeeInfoHeader {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    color: #6dbc74;
+}
+
+.bibEmployeeInfoTitle {
+    color: #9a9a9a;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bibEmployeeInfoValue {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bibLoaderContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*.bibRegularValue.red {*/
+/*    color: #E04A4B;*/
+/*}*/
+
+/*.bibRegularValue.green {*/
+/*    color: #6dbc74;*/
+/*}*/
+
+/*.bibLinesScrollContainer {*/
+/*    height: 80%;*/
+/*    width: 100%;*/
+/*    overflow-y: scroll;*/
+/*}*/
+
+/*.bibLinesScrollContainer::-webkit-scrollbar {*/
+/*    width: 4px;*/
+/*}*/
+
+/*.bibLinesScrollContainer::-webkit-scrollbar-thumb {*/
+/*    border-radius: 2px;*/
+/*    background-color: #bbbbbb;*/
+/*}*/
+
+@media (max-height: 850px) {
+
+}

@@ -1,0 +1,119 @@
+.anbMain {
+    position: fixed;
+    right: 10px;
+    background-color: white;
+    transition: .3s;
+    border-bottom-left-radius: 10px;
+    border: 1px #9a9a9a solid;
+    z-index: 1000002;
+}
+
+.anbMain.open {
+    box-shadow: 0px 0px 5px #9a9a9a;
+}
+
+.anbUsernameArea {
+    background-color: rgba(220, 220, 220, 1);
+    height: 40px;
+    display: flex;
+}
+
+.anbUsernameContainer {
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.anbLogOutButton {
+    height: 100%;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #9a9a9a;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.anbLogOutButton:hover {
+    color: black;
+}
+
+.anbActionButton {
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgba(235, 235, 235, 1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: -1px;
+    bottom: -42px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .3s;
+    border: 1px #9a9a9a solid;
+}
+
+.anbActionButton:hover {
+    background-color: rgba(225, 225, 225, 1);
+}
+
+.anbArrowContainer {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #9a9a9a solid;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 15px;
+}
+
+.anbMenuButton {
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.anbMenuButton.last {
+    border-bottom-left-radius: 10px;
+}
+
+.anbMenuButton:hover {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.anbEnterButton {
+    height: 40px;
+    background-color: rgba(235, 235, 235, 1);
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: -1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .3s;
+    border: 1px #9a9a9a solid;
+    opacity: .7;
+}
+
+.anbEnterButton:hover {
+    background-color: rgba(225, 225, 225, 1);
+    opacity: 1;
+}

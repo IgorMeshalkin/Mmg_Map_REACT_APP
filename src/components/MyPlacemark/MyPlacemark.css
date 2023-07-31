@@ -1,0 +1,9 @@
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.visible.not {
+    opacity: 0;
+    pointer-events: none;
+}

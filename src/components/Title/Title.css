@@ -1,0 +1,57 @@
+.headerContainer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    z-index: 999999;
+    pointer-events: none;
+}
+
+.headerBlock {
+    display: flex;
+    width: max-content;
+    padding: 5px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    pointer-events: auto;
+}
+
+.emblem {
+    max-height: 70px;
+    margin-top: 3px;
+}
+
+.headerText {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'Golos Text', sans-serif;
+}
+
+@media (max-height: 850px) {
+    .emblem {
+        max-height: 60px;
+        margin-top: 2px;
+    }
+
+    .headerText {
+        font-size: 24px;
+    }
+}
+
+@media (max-height: 700px) {
+    .emblem {
+        max-height: 50px;
+        margin-top: 2px;
+    }
+
+    .headerText {
+        font-size: 22px;
+    }
+}

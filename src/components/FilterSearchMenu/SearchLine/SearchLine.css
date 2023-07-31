@@ -1,0 +1,58 @@
+.slMain {
+    height: 40px;
+    width: 90%;
+    border: 1px #bbbbbb solid;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    transition: .5s;
+}
+
+.slMain.active {
+    border: 1px  #6dbc74 solid;
+}
+
+.slInput {
+    height: 38px;
+    width: 90%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.slInput::placeholder {
+    color: #bbbbbb;
+}
+
+.slMagnifierContainer {
+    height: 100%;
+    width: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slMagnifier {
+    height: 26px;
+    opacity: 0.2;
+
+}
+
+@media (max-height: 850px) {
+    .slMain {
+        height: 30px;
+    }
+
+    .slInput {
+        height: 28px;
+        font-size: 16px;
+    }
+
+    .slMagnifier {
+        height: 20px;
+    }
+}

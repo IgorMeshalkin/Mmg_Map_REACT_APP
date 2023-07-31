@@ -1,0 +1,68 @@
+.adminWhiteBackground {
+    height: 100vh;
+    width: 90vw;
+    background-color: white;
+    box-shadow: 0px 0px 15px #9a9a9a;
+}
+
+.adminPageTitle {
+    width: 100%;
+    height: 10%;
+    color: #6dbc74;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminFormsContainer {
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.adminFormsContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.adminFormsContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #e4c1c1;
+}
+
+.adminFormContainer {
+    width: 100%;
+    height: 50%;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminNavigateButtonsContainer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+.adminNavigateButtonContainer {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminNavigateButton {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e4c1c1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.adminNavigateButton:hover {
+    background-color: #dcaeae;
+}

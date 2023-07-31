@@ -1,0 +1,119 @@
+.rbMain {
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.rbMain.isVisible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.rbHeaderContainer {
+    background-color: rgba(210, 210, 210, .4);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.rbScrollListContainer {
+    max-height: 400px;
+    overflow-y: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rbScrollListContainer::-webkit-scrollbar {
+    width: 4px;
+}
+
+.rbScrollListContainer::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #bbbbbb;
+}
+
+.rbTitle {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.rbPropsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.rbProp {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rbPropTitle {
+    color: #9a9a9a;
+}
+
+.rbPropValue {
+    color: #6dbc74;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.riMain {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.riPercentLineContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.riMOName {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.riPercentLine {
+    height: 15px;
+    width: 0;
+    transition: 1.5s;
+}
+
+.riPercentLineValue {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+@media (max-height: 850px) {
+    .rbScrollListContainer {
+        max-height: 200px;
+    }
+
+    .rbTitle {
+        font-size: 16px;
+    }
+
+    .rbPropTitle {
+        font-size: 14px;
+    }
+
+    .rbPropValue {
+        font-size: 14px;
+    }
+
+    .riMOName {
+        font-size: 14px;
+    }
+
+    .riPercentLine {
+        height: 12px;
+    }
+
+    .riPercentLineValue {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,62 @@
+.ufspMain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ufspInputContainer {
+    height: 40px;
+    width: 30%;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ufspFilterContainer {
+    height: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.udspSeparator {
+    height: 100%;
+    width: 5%;
+}
+
+.ufspPlusButtonContainer {
+    height: 60%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ufspButton {
+    height: auto;
+    min-height: 40px;
+    width: 25%;
+    margin-right: 5px;
+    background-color: #d8edda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px #9a9a9a solid;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ufspButton.active {
+    background-color: #96cf9c;
+}
+
+.ufspButton:active {
+    background-color: #96cf9c;
+}
+
+

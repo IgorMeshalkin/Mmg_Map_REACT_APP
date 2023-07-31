@@ -1,0 +1,39 @@
+.cbuttMain {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.cbuttLeft {
+    height: 21px;
+    width: 21px;
+    border: 1px #9a9a9a none;
+    border-left-style: solid;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transition: .3s;
+}
+
+.cbuttRight {
+    height: 21px;
+    width: 21px;
+    border: 1px #9a9a9a none;
+    border-top-style: solid;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: .3s;
+}
+
+.cbuttMain:hover .cbuttLeft {
+    border: 1px black none;
+    border-left-style: solid;
+}
+
+.cbuttMain:hover .cbuttRight {
+    border: 1px black none;
+    border-top-style: solid;
+}

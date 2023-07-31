@@ -1,0 +1,80 @@
+.sabMain {
+    height: 29px;
+    width: 29px;
+    background-color: rgba(245, 245, 245, 1);
+    border: 1px #9a9a9a solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sabLeft {
+    height: 20px;
+    width: 20px;
+    border: 1px #9a9a9a none;
+    border-top-style: solid;
+    position: absolute;
+    top: 14px;
+    left: 4px;
+    transition: .3s;
+}
+
+.sabRight {
+    height: 20px;
+    width: 20px;
+    border: 1px #9a9a9a none;
+    border-left-style: solid;
+    position: absolute;
+    top: 4px;
+    left: 14px;
+    transition: .3s;
+}
+
+.sabMain:hover .sabLeft {
+    border: 1px black none;
+    border-top-style: solid;
+}
+
+.sabMain:hover .sabRight {
+    border: 1px black none;
+    border-left-style: solid;
+}
+
+.sabArrowLine {
+    height: 20px;
+    width: 20px;
+    border: 1px #9a9a9a none;
+    border-top-style: solid;
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    transition: .3s;
+}
+
+.sabArrow {
+    height: 10px;
+    width: 10px;
+    border: 1px #9a9a9a none;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    transition: .3s;
+}
+
+.sabMain:hover .sabArrowLine {
+    border: 1px black none;
+    border-top-style: solid;
+}
+
+.sabMain:hover .sabArrow {
+    border: 1px black none;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}

@@ -1,0 +1,136 @@
+.ibContainer {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.ibBlock {
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 25vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    position: relative;
+    transform: translateX(100%);
+    transition: .5s;
+    pointer-events: auto;
+}
+
+.ibBlock.open {
+    transform: translateX(0);
+}
+
+.ibName {
+    font-family: 'Golos Text', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    width: 95%;
+}
+
+.ibAddress {
+    font-family: 'Golos Text', sans-serif;
+    text-align: center;
+    color: gray;
+    margin-top: 5px;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.ibRegularLine {
+    font-family: 'Golos Text', sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ibRegularValue {
+    font-weight: bolder;
+}
+
+.ibRegularValue.green {
+    color: #6dbc74;
+}
+
+.ibRegularValue.red {
+    color: #E04A4B;
+}
+
+.ibCloseButton {
+    position: absolute;
+    right: 3px;
+    top: -5px;
+    font-size: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ibCloseButton:hover {
+    opacity: 1;
+}
+
+.ibMoreButtonContainer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ibMoreButton {
+    font-family: 'Golos Text', sans-serif;
+    color: gray;
+    cursor: pointer;
+}
+
+.ibHidden {
+    display: none;
+}
+
+.ibEmptyMessage {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e04a4b;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-height: 850px) {
+    .ibBlock {
+        max-width: 400px;
+    }
+
+    .ibName {
+        font-size: 17px;
+    }
+
+    .ibAddress {
+        font-size: 15px;
+    }
+
+    .ibRegularLine {
+        font-size: 16px;
+    }
+
+    .ibMoreButton {
+        font-size: 15px;
+    }
+
+    .ibRegularLine {
+        font-size: 14px;
+    }
+
+    .ibRegularValue {
+        font-size: 14px;
+    }
+}

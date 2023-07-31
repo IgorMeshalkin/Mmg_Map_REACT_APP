@@ -1,0 +1,69 @@
+.linMain {
+    height: 20vh;
+    width: 20vw;
+}
+
+.linTitle {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e04a4b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.linInputArea {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linInputContainer {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.linButton {
+    /*width: 100%;*/
+    /*height: 20%;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    color: #6dbc74;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.linButton:hover {
+    color: #4ba453;
+}
+
+.linButtonContainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linShowPasswordButton {
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+    font-size: 14px;
+    color: #9a9a9a;
+    cursor: pointer;
+}
+
+.linFailMessage {
+    color: #e04a4b;
+    text-align: center;
+}
+

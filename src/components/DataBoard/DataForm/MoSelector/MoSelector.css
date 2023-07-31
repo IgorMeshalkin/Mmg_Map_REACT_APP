@@ -1,0 +1,46 @@
+.moselMain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.moselLine {
+    width: 90%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.moselLine.rightMargin {
+    margin-right: 20px;
+}
+
+.moselCheckBoxTitle {
+    padding-left: 15px;
+    color: #9a9a9a;
+    font-weight: bold;
+    text-align: left;
+}
+
+.moselCurMoShadow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+    z-index: 1000000;
+}
+
+.moselCurMoShadow.active {
+    opacity: .5;
+    pointer-events: auto;
+}

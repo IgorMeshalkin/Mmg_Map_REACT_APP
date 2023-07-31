@@ -1,0 +1,61 @@
+.upButMain {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.pencilRotateAndPositionElement {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    right: 5px;
+}
+
+.pencilBody {
+    height: 10px;
+    width: 6px;
+    box-sizing: border-box;
+    background-color: #bababa;
+    position: relative;
+    transition: 0.3s;
+}
+
+.washingGum {
+    width: 6px;
+    height: 3px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #bababa;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    transition: 0.3s;
+}
+
+.kernel {
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 8px solid #bababa;
+    position: absolute;
+    bottom: -9px;
+    right: 0px;
+    transition: 0.3s;
+}
+
+.upButMain:hover .pencilBody {
+    background-color: black;
+}
+
+.upButMain:hover .washingGum {
+    background-color: black;
+}
+
+.upButMain:hover .kernel {
+    border-top: 8px solid black;
+}

@@ -1,0 +1,42 @@
+.llMain {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+
+.llRunner {
+    width: 5%;
+    height: 100%;
+    background-color: #6dbc74;
+    box-shadow: 0 0 15px 15px #6dbc74;
+    opacity: .3;
+    animation: action 1s infinite linear;
+    margin: auto;
+}
+
+.llMain.small {
+    width: 100%;
+    height: 100%;
+}
+
+.llRunner.small {
+    animation: actionSmall 1.5s infinite linear;
+}
+
+@keyframes action {
+    0% {
+        transform: translateX(-40vw);
+    }
+    100% {
+        transform: translateX(40vw);
+    }
+}
+
+@keyframes actionSmall {
+    0% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(150px);
+    }
+}

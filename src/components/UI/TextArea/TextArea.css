@@ -1,0 +1,43 @@
+.textaMain {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.textaBorder{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px #9a9a9a solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textArea {
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    font-family: Calibri;
+}
+
+.textArea::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+.textArea::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #dfdfdf;
+}
+
+.textaCharactersLeft {
+    position: absolute;
+    right: 10px;
+    bottom: -25px;
+    color: #9a9a9a;
+}

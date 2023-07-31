@@ -1,0 +1,17 @@
+.inpMain {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px #9a9a9a solid;
+    border-radius: 10px;
+}
+
+.input {
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    white-space: normal;
+}
